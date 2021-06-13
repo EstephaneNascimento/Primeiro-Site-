@@ -258,14 +258,6 @@ aside#lateral h1 {
    
 }
 
-/* Caso eu tiverse
-aside#lateral h2 {
-    background-color: blanchedalmond;
-    font-size: 13pt;
-    color: #ffffff;
-    padding: 5pt;
-}
-*/
 
 footer#rodape {
     clear: both; /* Ele limpa a configuração dos dois lados
