@@ -1,0 +1,346 @@
+@charset "UTF-8";
+
+/*@font-face{
+    font-family: 'FonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}*/
+
+
+body{
+    font-family:Arial ;
+    background-color:#ffffff; /*Site todo*/
+    color:rgb(0,0,0,);
+    
+}
+
+div#interface { /*Configurações da div criada ela é o conteiner
+o que estiver dentro dela é relativo no site e o que estiver fora 
+ é absoluto*/
+    width: 1000px;
+    background-color:#CBF3B2 ; /*fundo do que está dentro da div*/
+    margin: -20px auto 0px auto; /*Muda as quatro margens*/
+    /* a margem em auto é decif=dida pelo navegador e serve para 
+    ajusta a página*/
+    box-shadow:0px 0px 10px #054108;
+    padding: 10px 10px 10px 10px; /* modifica a margem dentro do espaço
+    delimitado da div*/
+}
+p{
+    text-align: justify;
+    text-indent:50px;
+}
+
+a{ /* configurando os links*/
+    color:black; /*tudo que for link estará em preto*/
+    text-decoration: none; /*Não terá o sublinhado em baixo*/
+}
+
+a:hover { /* configuração do link para quando o mouse for passado*/
+    text-decoration: underline; /*Quando passar o mouse ficará sublinhado*/
+}
+
+/*Configuração do cabeçalho*/
+
+
+header#cabecalho img#icone{
+    position: absolute;
+    left: 1250px;
+    top:60px;
+}
+
+header#cabecalho{
+    border-bottom:1px rgb(20, 63, 6) solid; /* Cria uma linha na página no local 
+    onde está sendo colocada*/
+    height:100px ;
+    /*background: url("../_imagens/imagem14.png") no-repeat 0px 0px ; */ 
+   /* Os parâmetros significam não repita a imagem o outro deslocamento lateral
+   e deslocamento vertical*/
+}
+header#cabecalho h1 { /*modificando o cabeçalho dentro dessa div*/
+    font-family: Arial, sans-serif;
+    font-size: 30pt;
+    color: rgba(5, 87, 46, 0.815);
+    text-shadow: 1px 1px 1px 1px rgba(0, 0, 0,.6);
+}
+
+header#cabecalho h2 {
+    font-family: Arial, sans-serif;
+    color:#21844C;
+    font-size:15pt;
+    padding: 0px; /* Referente a margem do h2 dentro dessa tag*/
+    margin-top: -30px;
+}
+
+/* Formatação de imagens com legendas*/
+figure.foto-legenda {
+    position: relative;
+    border: 8px solid white; /* serve para colocar borda*/
+    box-shadow: 1px 1px 4px black;
+}
+
+figure.foto-legenda img {
+    width:100%;
+    height:100%;
+}
+
+figure.foto-legenda figcaption {
+    opacity:0; /*Opacidade do background-color colocado*/
+    position: absolute;   /* Posição da legenda*/
+    top:0px; /* Posição da legenda* em relação a imagem*/
+    background-color:rgba(0,0,0,0.4);
+    color: white; /* Cor da legenda*/
+    width: 100%; /* largura do background-color*/
+    height: 100%; /* altura do background-color*/
+    padding: 10px; /* espaçamento*/
+    box-sizing: border-box; /* fique dentro da borda background-color*/
+    transition: Opacity 1s; /*Duração da legenda quando o mouse for passado*/
+}
+figure.foto-legenda:hover figcaption{
+    Opacity:1;
+}
+
+
+/*Formatação do menu*/
+
+nav#menu {
+    display: block; /* Transforma o menu em um bloco*/
+
+}
+
+nav#menu ul { /*Configurando a lista*/
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px; /*Irá colocar no topo da página*/
+    left: 900px; /* irá Afastar para a esquerda*/
+
+}
+
+
+nav#menu li { /*Configurando os itens da lista*/
+    display: inline-block; /* colocar os itens da lista do menu na mesma linha*/
+    background-color: #CBF3B2;
+    padding: 10px; /*Cria um espaço dentro da caixa que contém o objeto*/
+    margin: 2px; /*Cria um espaço em relação ao que está no lado de fora do objeto*/
+    transition: background-color 1s; /* Duração da transição quando for passado o mouse*/
+}
+
+nav#menu li:hover { /* O que acontecerá quando o mouse for passado por cima*/
+    background-color: #606060;
+}
+
+nav#menu h1 { /*Configurando o titulo h1 d menu*/
+    display: none; /* Escondendo o titulo h1 que está no menu*/
+    /*Ele nãoserá apagado pois é importante para mecânismos de busca*/
+}
+
+nav#menu a{ /* modificação do estilo do link*/
+    color: #000000; /*Cor da letra*/
+    text-decoration: none ; /*Tira os traços de baixo*/
+}
+
+nav#menu a:hover { /* modificação do estilo do link quando o mouse passar por cima*/
+    color: #ffffff;/*Muda a cor da letra quando colocado o mouse em cima*/
+    text-decoration: underline; /*Sublinha o link quando passado o mousa*/
+}
+
+
+section#corpo {
+    display: block; /* para ser mostrada como um bloco*/
+    width: 450px; /* largura*/
+    float: left; /* significa que essa seção irá ficar 
+    do lado esquerdo da página*/
+    border-right: 1px solid  #298A08 ; /* colocar a linha solida do lado direito, 
+    O primeiro parâmetro é espessura o segundo tipo de linha e o terceiro a cor*/
+    padding-right: 15px; /* Para fazer o distanciamento do conteúdo da linha colocada*/
+}
+
+table#tabela{ /* configuração da tabela geral*/
+    border: 1px solid #4D9760; /* coloca uma borda na tabela*/
+    border-spacing: 0px ; /* Serve para dá um espações entre as celulas*/
+    margin-left: auto; /* Centralizar a tabela a esquerda*/
+    margin-right:auto; /* Centralizar a tabela a direita*/
+    /*O auto significa automatico ou seja se for diminuida ou aumentada a tela
+    a centralização é feita automáticamente*/
+    text-align: center; /* Alinhamento de todo o texto da tabela*/
+    vertical-align: middle; /* Alinha dentro em relação verticar*/
+}
+
+table#tabela td { /* configuuração das celulas */
+    border: 1px solid #4D9760;
+    padding: 10px; /* O padding serve para colocar espaços internos dentro de um 
+    objeto do HTML nesse caso dentro do objeto tabela*/
+}
+
+table#tabela td.ce{/* configuração da table com id tabela da celula 
+    dentro dessa tabela e essa celula pertence a classe ce por isso tem um ponto
+    com o nome da classe.*/
+    
+    color:#2C863A; /* cor do texto da célula*/
+    background-color: rgba(142, 209, 125, 0); /* cor de fundo da célula*/
+    font-weight: bold; /* Preenchimento da fonte */
+
+
+}
+
+table#tabela td.cd { /* cofiguração de outra classe para celulas da direita nesta mesma tabela*/
+
+    color: rgb(18, 105, 44); /* cor do texto da célula*/
+    background-color:rgba(142, 209, 125, 0); ; /* cor de fundo da célula*/
+    vertical-align:top; /* Essa organização vai sobrepor a configuração
+    principal  vertical-align: middle; no caso das celulas à direita*/
+
+}
+
+table#tabela caption { /* Titulo da tabela*/
+    color: #094717;
+    font-size: 15pt;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+table#tabela caption span {
+    display: block; /* bloco para separação do texto*/
+    float: right; /*Esse bloco vai flutuar a direita*/
+    color: #084716; 
+    margin-top: 10px; /* Margin em relação a tag table*/
+    font-size: 7pt;
+}
+
+article#noticia-principal h2{ /* configurando todas os títulos h2 que estão dentro da tag article*/
+    font-size: 12pt;
+    color:#1a9139;
+    background-color:rgba(114, 156, 114, 0.178); /* dos textos em h2*/
+    padding: 5px 0px 5px 0px;
+    margin: 10px 0px 10px 0px;
+}
+
+header#cabecalho-artigo h1 { /* Configurando os títulos em h1 do cabeçalho do artigo*/
+    font-size: 15pt;
+    color:#298A08;
+    margin-bottom: 0px;   /* margem de baixo*/
+    margin-top: 0px;  
+}
+
+header#cabecalho-artigo h2 {
+    font-size: 13pt;
+    color:rgba(33, 85, 20, 0.445);
+    background-color:rgba(142, 209, 125, 0);
+    margin: 0px;
+}
+
+.direita{ /* Fazendo a modificação em uma classe outra forma de colocar a classe*/
+    text-align: right; /* Esse texto ficará à direita*/
+}
+header#cabecalho-artigo h3 {
+    font-size: 12px;
+    color:rgb(16, 43, 9);
+}
+
+aside#lateral {
+    display: block; /* para ser mostrada como um bloco*/
+    width: 350px; /* largura*/
+    float: right; /* significa que essa seção irá ficar 
+    do lado direito da página*/
+    background-color: rgba(195, 221, 189, 0.637); /* Cor de fundo do aside*/
+    padding: 10px;
+    margin-top: 50px;
+    margin-right: 15px;
+    box-shadow: 2px 2px 20px rgb(81, 117, 72); /* Sombra*/
+}
+
+aside#lateral h1 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    color: rgb(34, 83, 22);
+    text-align: center;
+    margin-top: 0px;
+   
+}
+
+/* Caso eu tiverse
+aside#lateral h2 {
+    background-color: blanchedalmond;
+    font-size: 13pt;
+    color: #ffffff;
+    padding: 5pt;
+}
+*/
+
+footer#rodape {
+    clear: both; /* Ele limpa a configuração dos dois lados
+    e faz com que o conteúdo do footer seja mostrado fora da 
+    divisão criada anteriormente.*/
+    border-top: 1px solid  #298A08; /* linha que fica encima do rodape*/
+}
+
+footer#rodape p{ /* Isso significa que no footer tudo que for do tipo paragráfo
+     recebe as seguintes configurações*/
+    text-align: center; /* posição do texto no centro*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+
+section#conteudo {
+    float: right;
+    width: 400px;
+    height: 700px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+iframe#framereceitas { /* Configurações do arquivo que será carregado dentro desse arquivo*/
+    width: 400px;
+    height: 660px;
+    border: none;
+    overflow: hidden;
+    /*overflow: hidden;  Evita que a rolagem aconteça*/
+}
+
+iframe#framereceitas::-webkit-scrollbar {
+    display: none;   
+}
+
+img#imagem { 
+    margin-top: 200px;
+}
+

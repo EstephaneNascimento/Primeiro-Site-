@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teste JavaScript </title>
+    <meta charset = "UTF-8"/>
+    <script>
+        function acendeLampada () { // Muda a imagem da lâmpada quando mouse é movido em cima da imagem
+            document.getElementByID("luz").src = "_imagens/lampada-acesa.jpg";
+            // Aqui estou modificando a imagem com id = luz para outra imagem que está em uma página
+        }
+        function apagaLampada () { // Muda a imagem para a original quando o mouse não está mais sobre a imagem 
+            document.getElementByID("luz").src = "_imagens/lampada-apagada.jpg";
+            // Aqui estou modificando a imagem com id = luz para a imagem inicial lâmpada apagada.
+        }
+        function quebraLampada () {
+            document>document.getElementByID("luz").src = "imagens/lampada-quebrada.jpg";
+        }
+    </script>
+</head>
+<body> 
+    <h1> Acenda a lâmpada</h1>
+    <img src= "_imagens/lampada-apagada.jpg" id="luz" onmousemove= "acendeLampada()" onmouseout = "apagaLampada()" onclick = "quebraLampada()">
+    <!-- Coloca uma imagem que quando o mouse passa por cima o se afasta chama determinada função -->
+    <!--Chama as funções:
+        onmousemove:  Movendo o mouse sobre a imagem
+        onmouseout: quando o mouse está fora da imagem
+        onclick: Quando a imagem for clicada
+        -->
+</body>
+</html>

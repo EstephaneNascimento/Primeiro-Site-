@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+
+p#texto {
+    font-size: 20px;
+    text-align: center;
+}
+
+ul#album-fotos {
+    width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
+}
+
+/* Configurando o que está em lista para virá imagem*/
+
+ul#album-fotos li{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid rgb(197, 240, 208); /* borda da imagem*/
+    background-color: #f8f5f5;
+    box-shadow: 5px 5px 5px rgba(47, 71, 41, 0.918);
+    -webkit-transition: all .3s ease-in; 
+    /* Parâmetros: all monitorar todos os efeitos, 
+    .3s tempo do efeito, ease-in tipo do efeito*/
+}
+
+ul#album-fotos li span { /* configurações da legenda por isso o span*/
+    opacity: 0; /* Faz com que a legenda não apareça*/
+    color:#ffffff;
+    text-shadow: 1pc 1px 1px #31313115; /* sombra do texto*/
+    background-color: #2b27275e;
+    font-size: 9pt;
+    line-height:370px;
+    padding: 5px;
+
+}
+
+ul#album-fotos li:hover span{ /*Quando passar o mouse a legenda irá aparecer*/
+    opacity: 1;
+    background-position: 50% 50%; /* colocando no centro da visualização*/
+    background-size: 300px 200px;
+    background-color: #18171746;
+}
+
+
+ul#album-fotos li:hover { /*Configurando o posicionamento para dá efeito de zoom*/
+    -webkit-transform: scale(1.5); /* Dá um max na imagem*/
+}
+
+
+ul#album-fotos li#foto01:hover {  /*Configurando o posicionamento */
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto02:hover {  /*Configurando o posicionamento*/
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto03:hover {  /*Configurando o posicionamento*/
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto04:hover {  /*Configurando o posicionamento */
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto05:hover {  /*Configurando o posicionamento*/
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto06:hover {  /*Configurando o posicionamento*/
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+/* Colocando as imagens e algumas configurações*/
+ul#album-fotos li#foto01 { 
+    background: url('../_imagens/acai.png') no-repeat;
+    background-position: 50% 50%; 
+    background-size: 300px 200px;
+    background-color: #18171746;
+}
+
+ul#album-fotos li#foto02 {
+    background: url('../_imagens/arroztoicinho.png') no-repeat;
+    background-position: 50% 50%; 
+    background-size: 300px 200px;
+    background-color: #18171746;
+}
+
+ul#album-fotos li#foto03 {
+    background: url('../_imagens/ArrozCarreteiro.png') no-repeat;
+    background-position: 50% 50%; 
+    background-size: 300px 200px;
+    background-color: #18171746;
+}
+
+ul#album-fotos li#foto04 {
+    background: url('../_imagens/brigadeiro.png') no-repeat;
+    background-position: 50% 50%; 
+    background-size: 300px 200px;
+    background-color: #18171746;
+}
+
+ul#album-fotos li#foto05 {
+    background: url('../_imagens/Nhoque.png') no-repeat;
+    background-position: 50% 50%; 
+    background-size: 300px 200px;
+    background-color: #18171746;
+}
+ul#album-fotos li#foto06 {
+    background: url('../_imagens/mapacomidas.png') no-repeat;
+    background-position: 50% 50%; 
+    background-size: 300px 200px;
+    background-color: #18171746;
+}

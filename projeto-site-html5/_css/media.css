@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+div#tv-radio {
+    width: 900px;
+    height: 400px;
+    margin: auto;
+    background: url('../_imagens/moldura.png') no-repeat;
+   
+}
+
+audio#musica {
+    display:block;
+    position: relative;
+    left: 500px;
+    top:200px ;
+    width:300px;
+    padding: 10px;
+    background-color: rgb(224, 233, 227);
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px rgba(9, 56, 7, 0.356);
+}
+
+video#filme {
+    display: block;
+    position: relative;
+    left:17px;
+    top: -51px;
+    width: 370px;
+    height: 243px;
+}
+
+
+h1#texto {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(138, 167, 24);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
